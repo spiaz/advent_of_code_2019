@@ -13,7 +13,7 @@ assert get_fuel(100756) == 33583.0
 
 
 # %%
-with open("Day01_input.txt", "r") as f:
+with open("day01_input.txt", "r") as f:
     masses = [int(x.strip()) for x in f.readlines()]
 
 fuels = [get_fuel(m) for m in masses]
@@ -34,7 +34,7 @@ assert total_fuel(1969) == 966.0
 assert total_fuel(100756) == 50346
 
 # %%
-with open("Day01_input2.txt", "r") as f:
+with open("day01_input2.txt", "r") as f:
     masses = [int(x.strip()) for x in f.readlines()]
 
 fuels = [total_fuel(m) for m in masses]
